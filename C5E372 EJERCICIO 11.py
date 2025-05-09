@@ -24,16 +24,13 @@ print ("son los valores de las tablas selecionadas)
 tabla_1 = int(input("Selecciones el numero menor del rango deseado:"))
 tabla_2 = int(input("Selecciones el numero mayor del rango deseado:"))
 numero = tabla_1
-mult = 0
 Mult_max = 12
 Mult_min = 0
-for numero in range(numero, tabla_2, Mult_max + 1):
-    if mult == 0: 
-        print("Tabla", range(numero, tabla_2, Mult_max))
-        mult *= numero
-        print(mult)
-
 print("son los valores de las tablas selecionadas")
+for numero in range(numero, Mult_max + 1):
+    print("Tabla", numero, "x", Mult_min, "=", numero * Mult_min )1
+    Mult_min += 1 
+
 
 
 
