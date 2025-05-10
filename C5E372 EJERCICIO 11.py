@@ -22,16 +22,15 @@ print ("son los valores de las tablas selecionadas)
 #PEDIR LOS NUMEROS PARA LAS TABLAS
 olo = 1
 while olo == 1:
-  try: 
+ try: 
    tabla_1 = int(input("Selecciones el numero menor del rango deseado:"))
    tabla_2 = int(input("Selecciones el numero mayor del rango deseado:"))
+   numero = tabla_1
+   Mult_max = 12
+   Mult_min = 0
    olo = 0
-  except ValueError: print("Número digitado no reconocido")
-numero = tabla_1
-Mult_max = 12
-Mult_min = 0
-print("Estos son las tablas de los valores selecionados")
-while  numero < tabla_2 + 1 and Mult_min != Mult_max + 1 : 
+   print("Estos son las tablas de los valores selecionados")
+   while  numero < tabla_2 + 1 and Mult_min != Mult_max + 1 : 
     try:
       if Mult_min == 0: print ("Tabla del", numero,":")
       print( numero, "x", Mult_min, "=", numero * Mult_min )
@@ -39,9 +38,10 @@ while  numero < tabla_2 + 1 and Mult_min != Mult_max + 1 :
       if Mult_min == Mult_max + 1: 
           numero = numero + 1
           Mult_min = 0
-          if tabla_1 == tabla_2 + 1:
-            print("!Gracias por usar este programa¡")
+      elif tabla_1 == tabla_2 + 1:
+            print ("Gracias por usar este programa")
             break
     except ValueError:
-     print("Número no reconocido")
+     print("")
                   
+ except ValueError: print("Número digitado no reconocido")
