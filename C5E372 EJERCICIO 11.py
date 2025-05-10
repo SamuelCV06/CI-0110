@@ -18,11 +18,15 @@ multi += 1
 print (multi) 
 print ("son los valores de las tablas selecionadas)
 """
-import time
-#PEDIR LOS NUMEROS PARA LAS TABLAS
 
-tabla_1 = int(input("Seleccione el número menor del rango deseado:"))
-tabla_2 = int(input("Seleccione el número mayor del rango deseado:"))
+#PEDIR LOS NUMEROS PARA LAS TABLAS
+olo = 1
+while olo == 1:
+  try: 
+   tabla_1 = int(input("Selecciones el numero menor del rango deseado:"))
+   tabla_2 = int(input("Selecciones el numero mayor del rango deseado:"))
+   olo = 0
+  except ValueError: print("Número digitado no reconocido")
 numero = tabla_1
 Mult_max = 12
 Mult_min = 0
@@ -36,15 +40,8 @@ while  numero < tabla_2 + 1 and Mult_min != Mult_max + 1 :
           numero = numero + 1
           Mult_min = 0
           if tabla_1 == tabla_2 + 1:
+            print("!Gracias por usar este programa¡")
             break
-          print("!Gracias por usar este programa¡")
     except ValueError:
      print("Número no reconocido")
-          
-
-
-
-
-
-
-          
+                  
