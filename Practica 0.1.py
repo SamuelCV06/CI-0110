@@ -4,7 +4,7 @@
 	pero bueno """
 
 afirmacion = list(("s", "si", "SI", "Si", "S", "sI", "Se", "sE", "se", "SE"))
-negacion = list(("n", "No", "NO", "nO", "N"))
+negacion = list(("n", "No", "NO", "nO", "N", "no"))
 restart = "s"
 while restart == ("s") :
      try:
@@ -21,9 +21,7 @@ while restart == ("s") :
                print("¿Quieres volver a ejecutar el programa? (s/n): ")
           restart = input()
           if restart in negacion:
-                    print ("Gracias por usar este programa")
-                    input()
-                    break           
+                    break     
           else:
                restart in afirmacion
                restart = "s"
