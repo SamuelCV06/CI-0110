@@ -3,6 +3,8 @@
     me entienes reealemtne no tiene logica
 	pero bueno """
 
+afirmacion = list(("s", "si", "SI", "Si", "S", "sI", "Se", "sE", "se", "SE"))
+negacion = list(("n", "No", "NO", "nO", "N"))
 restart = "s"
 while restart == ("s") :
      try:
@@ -18,62 +20,18 @@ while restart == ("s") :
                print ("El precio del tiquete es de $2,50")
                print("¿Quieres volver a ejecutar el programa? (s/n): ")
           restart = input()
-          if restart == "n":
-               try:
+          if restart in negacion:
                     print ("Gracias por usar este programa")
-                    break
                     input()
-               except restart == ("s") or ("si") or ("SI") or ("Si") or ("S"):
-                    restart = "s"
-          elif restart == "no":
-                try:
-                    print ("Gracias por usar este programa")
-                    break
-                    input()
-                except restart == ("s") or ("si") or ("SI") or ("Si") or ("S"):
-                    restart = "s"
-          elif restart == "No":
-               try:
-                    print ("Gracias por usar este programa")
-                    break
-                    input()
-               except restart == ("s") or ("si") or ("SI") or ("Si") or ("S"):
-                    restart = "s"
-          elif restart == "NO":
-               try:
-                    print ("Gracias por usar este programa")
-                    break
-               except restart == ("s") or ("si") or ("SI") or ("Si") or ("S"):
-                    restart = "s"
-                    restart == "s"
-          elif restart == "Si":
-               try: restart = "s"
-               except restart == "n":
-                    restart = "n"
-          elif restart == "si":
-               try: restart = "s"
-               except restart == "n":
-                    restart = "n"
-          elif restart == "SI":
-               try: restart = "s"
-               except restart == "n":
-                    restart = "n"
-          elif restart == "s":
-               try: restart = "s"
-               except restart == "n":
-                    restart = "n"
-          elif restart == "S":
-               try: restart = "s"
-               except restart == "n":
-                    restart = "n"
+                    break           
           else:
-               print ("Gracias por usar este programa")
-               break
+               restart in afirmacion
+               restart = "s"
      except ValueError:
           print("Número no reconocido")
           print ("quieres reiniciar s/n")
           restart = input()
-          if restart == ("n") or ("no") or ("No") or ("no"):
+          if restart == negacion:
                print ("Gracias por usar este programa")
                input()
 
