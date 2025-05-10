@@ -31,7 +31,8 @@ while olo == 1:
    Mult_min = 0
    olo = 0
    # Del rango de numeros digitado se crean las tablas
-   if tabla_1 < tabla_2: print("Estos son las tablas de los valores selecionados") 
+   if tabla_1 < tabla_2: print("Estos son las tablas de los valores selecionados:") 
+   else: print("El rango escogido es incorrecto")   
    while  numero < tabla_2 + 1 and Mult_min != Mult_max + 1 : 
     try:
       if Mult_min == 0: print ("Tabla del", numero,":")
@@ -41,9 +42,8 @@ while olo == 1:
           numero = numero + 1
           Mult_min = 0
       elif tabla_1 == tabla_2 + 1:
-            print ("Gracias por usar este programa")
             break
     except ValueError:
      print("")
                   
- except ValueError: print("Número digitado no reconocidos o mal posicionados")
+ except ValueError: print("Número digitado no reconocidos")
