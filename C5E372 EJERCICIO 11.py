@@ -26,12 +26,25 @@ tabla_2 = int(input("Selecciones el numero mayor del rango deseado:"))
 numero = tabla_1
 Mult_max = 12
 Mult_min = 0
-print("son los valores de las tablas selecionadas")
-for numero in range(numero, Mult_max + 1):
-    print("Tabla", numero, "x", Mult_min, "=", numero * Mult_min )1
-    Mult_min += 1 
+print("Estos son las tablas de los valores selecionados")
+while  numero < tabla_2 + 1 and Mult_min != Mult_max + 1 : 
+    try:
+      if Mult_min == 0: print ("Tabla del", numero,":")
+      print( numero, "x", Mult_min, "=", numero * Mult_min )
+      Mult_min += 1
+      if Mult_min == Mult_max + 1: 
+          numero = numero + 1
+          Mult_min = 0
+          if tabla_1 == tabla_2 + 1:
+            print("!Gracias por usar este programa¡")
+            break
+    except ValueError:
+     print("Número no reconocido")
+          
 
 
 
 
-           
+
+
+          
