@@ -51,4 +51,4 @@ while start == 1:
       if numero == tabla_2 + 1:
         input("Presione ¨Enter¨ para cerrar el programa")   
    break         
- except ValueError: print("Número digitado no reconocidos")     
+ except ValueError: print("Número digitado no reconocido")     
