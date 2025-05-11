@@ -26,8 +26,8 @@ print ("son los valores de las tablas selecionadas)
 """
 #Resultado final:
 #Pequeño bucle para evitar errores
-olo = 1
-while olo == 1:
+start = 1
+while start == 1:
  try:
    # Se piden los número para el rango numerico
    print("¡Bienvenido al programa de creacón de tablas de multiplicar según un rango numerico especificado!") 
@@ -36,7 +36,7 @@ while olo == 1:
    numero = tabla_1
    Mult_max = 12
    Mult_min = 0
-   olo = 0
+   start = 0
    # Se imprime el encabezado
    if tabla_1 < tabla_2: print("Estos son las tablas en el rango de los valores selecionados:") 
    else: print("El rango escogido es incorrecto")   
