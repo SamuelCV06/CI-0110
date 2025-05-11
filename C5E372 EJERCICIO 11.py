@@ -30,7 +30,7 @@ start = 1
 while start == 1:
  try:
    # Se piden los número para el rango numerico
-   print("¡Bienvenido al programa de creacón de tablas de multiplicar según un rango numerico especificado!") 
+   print("¡Bienvenido al programa de creación de tablas de multiplicar según un rango númerico especificado!") 
    tabla_1 = int(input("Selecciones el numero menor del rango deseado:"))
    tabla_2 = int(input("Selecciones el numero mayor del rango deseado:"))
    numero = tabla_1
@@ -38,8 +38,8 @@ while start == 1:
    Mult_min = 0
    start = 0
    # Se imprime el encabezado
-   if tabla_1 < tabla_2: print("Estos son las tablas en el rango de los valores selecionados:") 
-   else: print("El rango escogido es incorrecto")   
+   if tabla_1 < tabla_2 or tabla_1 == tabla_2: print("Estos son las tablas en el rango de los valores selecionados:") 
+   elif tabla_2 < tabla_1: print("El rango escogido es incorrecto")   
    while  numero < tabla_2 + 1 and Mult_min != Mult_max + 1 : 
       #Se crean las tablas y se realizan las multiplicaciones
       if Mult_min == 0: print ("Tabla del", numero,":")
