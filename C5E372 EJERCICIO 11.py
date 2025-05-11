@@ -35,15 +35,15 @@ while olo == 1:
    else: print("El rango escogido es incorrecto")   
    while  numero < tabla_2 + 1 and Mult_min != Mult_max + 1 : 
     try:
+      #Se crean las sumas y las multiplicaciones
       if Mult_min == 0: print ("Tabla del", numero,":")
       print( numero, "x", Mult_min, "=", numero * Mult_min )
       Mult_min += 1
       if Mult_min == Mult_max + 1: 
           numero = numero + 1
           Mult_min = 0
-      elif tabla_1 == tabla_2 + 1:
-            break
+    #No sirve de nada porque no puede dar error pero el try pide una excepci;c
     except ValueError:
-     print("")
-                  
+     print("Es imposible llegar aquí")
+   input("Presione cualquier tecla para cerrar el programa")                
  except ValueError: print("Número digitado no reconocidos")
