@@ -16,8 +16,8 @@ numero <---- tabla_1
 multi_maximo <= 12
 multi_minimo <= 0
 print <---- "son los valores de las tablas selecionadas"
-while  numero < tabla_2 + 1 and mult_min <!= mult_max + 1 
- print <-- numero, "x", Mult_min, "=", numero * Mult_min
+while  numero < tabla_2 + 1 and multi_minimo <!= multi_maximo + 1 
+ print <-- numero, "x", multi_minimo, "=", numero * multi_minimo
 multi_minimo <--- multi_minimo + 1
 if multi_minimo <= multi_maximo + 1:
 numero <-- numero + 1
