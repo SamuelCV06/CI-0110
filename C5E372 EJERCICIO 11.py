@@ -37,11 +37,10 @@ while start == 1:
    Mult_max = 12
    Mult_min = 0
    start = 0
-   # Se imprime el encabezado
    if tabla_1 < tabla_2 or tabla_1 == tabla_2: print("Estos son las tablas en el rango de los valores selecionados:") 
-   elif tabla_2 < tabla_1: print("El rango escogido es incorrecto")   
+   elif tabla_2 < tabla_1: print("Los valores escogidos no son un rango válido")   
    while  numero < tabla_2 + 1 and Mult_min != Mult_max + 1 : 
-      #Se crean las tablas y se realizan las multiplicaciones
+      #Se imprimen el encabezado de cada tabla, se crean las tablas y se realizan las multiplicaciones
       if Mult_min == 0: print ("Tabla del", numero,":")
       print( numero, "x", Mult_min, "=", numero * Mult_min )
       Mult_min += 1
