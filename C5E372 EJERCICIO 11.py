@@ -9,22 +9,24 @@ Imprimir en pantalla las tablas de multiplicar (incluye valores multiplicados de
   cada fila se imprime el resultado de una multiplicación. Por ejemplo: 1 x 2 = 2
 """
 
-""" Idea Original:
+""" Algoritmo:
 tabla_1 <----- solicitar al usuario
 tabla_2 <----- solicitar al usario
 numero <---- tabla_1
-mult <= 0
 multi_maximo <= 12
 multi_minimo <= 0
-for numero in range(numero, tabla_2, multi_maximo + 1)
-multi *= numero
-if multi <-- 0
-print tabla range(numero, tabla_2, multi_maximo)
-multi += 1
-print (multi) 
-print ("son los valores de las tablas selecionadas)
+print <---- "son los valores de las tablas selecionadas"
+while  numero < tabla_2 + 1 and mult_min <!= mult_max + 1 
+ print <-- numero, "x", Mult_min, "=", numero * Mult_min
+multi_minimo <--- multi_minimo + 1
+if multi_minimo <= multi_maximo + 1:
+numero <-- numero + 1
+multi_minimo <= 0
+if numero <= tabla_2 + 1
+break
 """
 #Resultado final:
+#Hice de cosas que no estan en el algoritmo porque me emocione de más(espero no este mal)
 #Pequeño bucle para evitar errores
 start = 1
 while start == 1:
