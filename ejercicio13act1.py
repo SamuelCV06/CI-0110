@@ -24,5 +24,6 @@ for i in range(10):
     N_A = rn.randint(1, 1000)
     lista.append (N_A)
     i *= 1
-#Imprime la lista
-print (lista) 
+#Imprime la lista en forma separada
+for x in lista:
+    print (x) 
