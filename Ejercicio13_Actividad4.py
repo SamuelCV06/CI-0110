@@ -17,17 +17,17 @@ Algoritmo:
 3.3 i = i + 1
 4. p <-- 1
 5. while p <= 3 
-6. numero_jugador <----- pedir al usuario
-7. if numero_jugador in lista then
-7.1. x <-- posición en la lista
-7.1.1 print <--- "Felicidades usted ha ganado con el número que se encuentra en la posición",x,"de la lista." 
-7.1.1.1 break
-8 else
-8.1 if p < 3 then
-8.1.1 print <-- " Su número no esta en la lista, intentelo de nuevo "
-8.1.1.1 p <= p + 1
-9. else
-9.1 print <-- " Usted perdió, los números correctos son los siguientes", lista "  
+5.1. numero_jugador <----- pedir al usuario
+5.1.1 if numero_jugador in lista then
+5.1.1.1 x <-- posición en la lista
+5.1.1.1.1 print <--- "Felicidades usted ha ganado con el número que se encuentra en la posición",x,"de la lista." 
+5.1.1.1.1.1 break
+6.1 else
+6.1.1 if p < 3 then
+6.1.1.1 print <-- " Su número no esta en la lista, intentelo de nuevo "
+6.1.1.1.1 p <= p + 1
+7.1. else
+7.1.1 print <-- " Usted perdió, los números correctos son los siguientes", lista "  
 """
 #Importar libreria ramdom
 import random as rn
