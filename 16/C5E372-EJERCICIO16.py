@@ -28,14 +28,41 @@ F1 = convercion-de-divisa
 F2 = venta_y_semestre
 F3 = Ubicacion_por_tienda
 """
+q,w,e,f,g,h = ["ENERO", "FEBRERO", "MARZO", "ABRIL", "MAYO", "JUNIO"]
+j,k,l,ñ,z = ["JULIO", "AGOSTO", "SEPTIEMBRE", "NOVIEMBRE", "DICIEMBRE"]
 num_lineas = []
 a = 1
-data1 = []
-f = open(r"C:\Users\sammn\Desktop\proyect\CI-0110\16\Ejercicio 16-1.txt", "r")
-for x in f:
-    data1.append(x[1])
-    print(data1)
+
+text = open(r"C:\Users\C5E372\APPS\CI-0110\16\Ejercicio 16-1.txt", "r")
+one = 0
+final = 4
+ventas_s_1 = []
+ventas_s_2 = []
+ventas_z_n = []
+ventas_z_c = []
+ventas_z_s = []
+P1 = []
+P2 = []
+data = []
+for a in range(0, 100):
+    x = text.readline(a)
+    data.append(x)
+    if q or w or e or f or g or h in data:
+          P1.append(x)    
+    elif j or k or l or ñ or z in data:
+          P2.append(x)
+    a+=1
+
+print(P1)
+"""
+for x in text:
+    data.append(x)
+    print(data)  
+"""
 
 
+""""
+data1 
 lineas = f.readlines()
-"""for num_lineas, linea in enumerate(lineas, start=1):"""
+for num_lineas, linea in enumerate(lineas, start=1):
+"""
